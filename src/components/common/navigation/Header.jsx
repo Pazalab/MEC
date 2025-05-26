@@ -10,7 +10,7 @@ const Header = () => {
   const [ educationDrop, setEducationDrop ] = useState(false);
   const [ admissionDrop, setAdmissionDrop ] = useState(false);
   const aboutData = [
-         { id: 0, title: "Who we are", link: "/about-us/who-we-are"},
+         { id: 0, title: "About MEC", link: "/about-us/about-mec"},
          { id: 1, title: "Word from Director", link: "/about-us/word-from-our-director"},
          { id: 39, title: "Academic Results", link: "/about-us/academic-results"},
          { id: 2, title: "Our Staff", link: "/about-us/our-staff"},
@@ -37,7 +37,7 @@ const Header = () => {
                                      <Link to={"/"} className="logo">
                                                <img src={logo} alt="Moi Educational Center logo" />
                                                <div className="logo-texts">
-                                                        <h2>Moi Educational Center</h2>
+                                                        <h2>Moi Educational Centre</h2>
                                                         <p>Strive for Excellence</p>
                                                </div>
                                      </Link>

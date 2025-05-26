@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom"
 import { TbSchool } from "react-icons/tb";
-import junior from "../../assets/junior.jpg"
+import junior from "../../assets/junior1.jpg"
+import junior2 from "../../assets/junior2.jpg"
+import upper from "../../assets/upper.jpg"
 import middle from "../../assets/middle.jpg"
 import senior from "../../assets/senior.jpg"
 import { BsArrowRight } from "react-icons/bs";
+import { IoSchool } from "react-icons/io5";
 
 const EducationStrip = () => {
   return (
@@ -12,6 +15,7 @@ const EducationStrip = () => {
                        <h2>Learning with Us</h2>
                        <Link to={"/"}>Book a Tour <span><TbSchool /></span></Link>
               </div>
+              <h3 className="intro-title"><span>1</span>CBC Curriculumn</h3>
              <div className="education-strip-row">
                         <div className="education-strip-moja">
                                    <div className="strip-background">
@@ -38,6 +42,27 @@ const EducationStrip = () => {
                         <div className="education-strip-moja">
                                    <div className="strip-background">
                                             <div className="strip-background-image">
+                                                       <img src={junior2} alt="" />
+                                            </div>
+                                            <div className="strip-background-video">
+                                                    <video autoPlay loop muted>
+                                                            <source src="https://res.cloudinary.com/dq6subhaj/video/upload/v1747052601/6th-form-v4_larwe3.mp4" type="video/mp4" />
+                                                     </video>
+                                            </div>
+                                   </div>
+                                   <div className="overshadow"></div>
+                                   <div className="strip-texts">
+                                             <div className="">
+                                                        <h3>Age 6 - 8</h3>
+                                                        <h2>Lower Primary</h2>
+                                             </div>
+
+                                              <Link to={"/"}>Learn More <span><BsArrowRight /></span></Link>
+                                   </div>
+                        </div>
+                        <div className="education-strip-moja">
+                                   <div className="strip-background">
+                                            <div className="strip-background-image">
                                                        <img src={middle} alt="" />
                                             </div>
                                             <div className="strip-background-video">
@@ -49,14 +74,35 @@ const EducationStrip = () => {
                                    <div className="overshadow"></div>
                                    <div className="strip-texts">
                                              <div className="">
-                                                        <h3>Age 9 - 14</h3>
-                                                        <h2>Middle School</h2>
+                                                        <h3>Age 9 - 11</h3>
+                                                        <h2>Upper Primary</h2>
                                              </div>
 
                                               <Link to={"/"}>Learn More <span><BsArrowRight /></span></Link>
                                    </div>
                         </div>
 
+                <div className="education-strip-moja">
+                                   <div className="strip-background">
+                                            <div className="strip-background-image">
+                                                       <img src={upper} alt="" />
+                                            </div>
+                                            <div className="strip-background-video">
+                                                    <video autoPlay loop muted>
+                                                            <source src="https://res.cloudinary.com/dq6subhaj/video/upload/v1747052601/6th-form-v4_larwe3.mp4" type="video/mp4" />
+                                                     </video>
+                                            </div>
+                                   </div>
+                                   <div className="overshadow"></div>
+                                   <div className="strip-texts">
+                                             <div className="">
+                                                        <h3>Age 12 - 14</h3>
+                                                        <h2>Junior School</h2>
+                                             </div>
+
+                                              <Link to={"/"}>Learn More <span><BsArrowRight /></span></Link>
+                                   </div>
+                        </div>
                         <div className="education-strip-moja">
                                    <div className="strip-background">
                                             <div className="strip-background-image">
@@ -78,6 +124,39 @@ const EducationStrip = () => {
                                               <Link to={"/"}>Learn More <span><BsArrowRight /></span></Link>
                                    </div>
                         </div>
+             </div>
+
+             <div className="cambridge-section">
+                       <h3 className="intro-title"><span>2</span>Cambridge Curriculum</h3>
+
+                       <div className="cambridge-curriculum-row">
+                                 <div className="cambridge-moja">
+                                             <span><IoSchool /></span>
+                                             <h3>Early Years</h3>
+                                             <p>Age 2 - 5</p>
+                                 </div>
+                                 <div className="cambridge-moja">
+                                             <span><IoSchool /></span>
+                                             <h3>Cambridge Primary</h3>
+                                             <p>Age 5 - 11</p>
+                                 </div>
+                                 <div className="cambridge-moja">
+                                             <span><IoSchool /></span>
+                                             <h3>Early Years</h3>
+                                             <p>Age 11 - 14</p>
+                                 </div>
+                                 <div className="cambridge-moja">
+                                             <span><IoSchool /></span>
+                                             <h3>Early Years</h3>
+                                             <p>Age 14 - 15</p>
+                                             <p>IGCSE & O Levels</p>
+                                             <p>Cambridge AS & A Levels</p>
+                                 </div>
+                       </div>
+             </div>
+
+             <div className="strip-btn">
+                         <Link to={"/"}> Explore More <span></span></Link>
              </div>
     </div>
   )

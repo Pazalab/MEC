@@ -19,9 +19,10 @@ const AboutSection = () => {
                                                         <Link to={"/"}>Find out More</Link>
                                               </div>
                                  </div>
-                      </div>
-                      <EducationStrip />
+                      </div>     
+                        <EducationStrip />
            </div>
+          
     </div>
   )
 }

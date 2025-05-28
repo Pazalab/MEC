@@ -5,6 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import News from './pages/News'
 import AdmissionProcess from './pages/AdmissionProcess'
+import SingeEducationPage from './pages/SingeEducationPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
               <Route path='/contact' element={<Contact />} />
               <Route path='/news-and-updates' element={<News />} />
               <Route path="/admissions/admission-process" element={<AdmissionProcess />} />
+              <Route path='/education/:name' element={<SingeEducationPage />} />
     </Routes>
   )
 }

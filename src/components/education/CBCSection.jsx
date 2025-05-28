@@ -1,7 +1,7 @@
 
 const CBCSection = () => {
   return (
-    <div>CBCSection</div>
+    <div className="cbc-section"></div>
   )
 }
 

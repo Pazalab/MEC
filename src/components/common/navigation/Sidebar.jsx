@@ -127,7 +127,7 @@ const Sidebar = () => {
                                                        <h2>Useful Links</h2>
                                                         <ul>
                                                                   <li><NavLink to={"/"}>Home</NavLink></li>
-                                                                  <li><NavLink to={"Pre-primary"}>News & Updates</NavLink></li>
+                                                                  <li><NavLink to={"/news-and-updates"}>News & Updates</NavLink></li>
                                                                   <li><NavLink to={"Pre-primary"}>Contact Us</NavLink></li>
                                                                   <li><NavLink to={"Pre-primary"}>Child Safety</NavLink></li>
                                                         </ul>

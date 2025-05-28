@@ -1,0 +1,33 @@
+.process-body{
+      padding: 80px 0;
+}
+
+.process-body-intro{
+       width: 800px;
+       margin: auto;
+       text-align: center;;
+}
+.process-body-intro h2{
+     font-size: 65px;
+     font-weight: 600;
+}
+
+.process-body-intro p{
+      font-size: 22px;
+      font-weight: 300;
+      color: rgb(50, 50, 50);
+      margin: 10px 0;
+}
+
+
+@media(max-width: 1090px){
+       .process-body-intro{
+              width: 100%;
+       }
+}
+
+@media(max-width: 768px){
+       .process-body-intro h2{
+            font-size: 50px;
+       }
+}

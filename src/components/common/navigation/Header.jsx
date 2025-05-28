@@ -10,7 +10,7 @@ const Header = () => {
   const [ educationDrop, setEducationDrop ] = useState(false);
   const [ admissionDrop, setAdmissionDrop ] = useState(false);
   const aboutData = [
-         { id: 0, title: "About MEC", link: "/about-us/about-mec"},
+         { id: 0, title: "About MEC", link: "/about-mec"},
          { id: 1, title: "Word from Director", link: "/about-us/word-from-our-director"},
          { id: 39, title: "Academic Results", link: "/about-us/academic-results"},
          { id: 2, title: "Our Staff", link: "/about-us/our-staff"},
@@ -19,8 +19,11 @@ const Header = () => {
   ]
   const educationData = [
       { id: 0, title: "Pre-primary", link: "/education/pre-primary"},
-      { id: 1, title: "Middle School", link: "/education/middle-school"},
-      { id: 2, title: "Senior School", link: "/education/senior-school"}
+      { id: 1, title: "Lower Primary", link: "/education/middle-school"},
+      { id: 2, title: "Upper Primary", link: "/education/senior-school"},
+      { id: 3, title: "Junior School", link: "/education/middle-school"},
+      { id: 4, title: "Senior School", link: "/education/senior-school"},
+      { id: 5, title: "Cambridge System", link: "/education/cambridge-system"}
   ]
   const admissionData = [
     { id: 0, title: "Admission Process", link: "/admissions/admission-process"},
@@ -44,16 +47,16 @@ const Header = () => {
                                      <nav>
                                                <ul>
                                                        <li><NavLink to={"/"}>Home</NavLink></li>
-                                                       <li onMouseEnter={() => setAboutDrop(true)} onMouseLeave={() => setAboutDrop(false)}><NavLink to={"/about-us"}>About</NavLink>
+                                                       <li onMouseEnter={() => setAboutDrop(true)} onMouseLeave={() => setAboutDrop(false)}><Link to={"#"}>About</Link>
                                                                 <Dropdown data={aboutData} status={aboutDrop}/>
                                                        </li>
-                                                       <li onMouseEnter={() => setEducationDrop(true)} onMouseLeave={() => setEducationDrop(false)}><NavLink to={"/education"}>Education</NavLink>
+                                                       <li onMouseEnter={() => setEducationDrop(true)} onMouseLeave={() => setEducationDrop(false)}><Link to={"#"}>Education</Link>
                                                                  <Dropdown data={educationData} status={educationDrop} />
                                                        </li>
-                                                       <li onMouseEnter={() => setAdmissionDrop(true)} onMouseLeave={() => setAdmissionDrop(false)}><NavLink to={"/admissions"}>Admissions</NavLink>
+                                                       <li onMouseEnter={() => setAdmissionDrop(true)} onMouseLeave={() => setAdmissionDrop(false)}><Link to={"#"}>Admissions</Link>
                                                                 <Dropdown data={admissionData} status={admissionDrop} />
                                                        </li>
-                                                       <li><NavLink to={"/news"}>News & Updates</NavLink></li>
+                                                       <li><NavLink to={"/news-and-updates"}>News & Updates</NavLink></li>
                                                        <li><NavLink to={"/contact"}>Contact Us</NavLink></li>
                                                </ul>
 

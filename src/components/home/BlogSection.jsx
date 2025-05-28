@@ -5,10 +5,12 @@ import blog1 from "../../assets/kids.jpg"
 import blog2 from "../../assets/innovation.jpg"
 import blog3 from "../../assets/academic.jpg"
 import Accreditations from "./Accreditations";
+import Explorations from "./Explorations";
 const BlogSection = () => {
   return (
     <div className="blog-section">
               <div className="inner-row">
+                        <Explorations />
                         <div className="blog-section-content">
                                   <div className="blog-intro">
                                               <div className="blog-intro-column">
@@ -48,7 +50,6 @@ const BlogSection = () => {
                                              </div>
                                   </div>
                         </div>
-
                         <Accreditations />
               </div>
     </div>

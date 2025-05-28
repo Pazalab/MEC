@@ -68,15 +68,22 @@
 }
 
 .contact-form{
-     width: 800px;
+     width: 1000px;
+     border-radius: 20px;
+     padding:60px 50px;
      margin: auto;
+     background: white;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
 }
 
 .contact-form h2{
     font-size: 50px;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .form-row{
     margin-bottom: 20px;
@@ -99,7 +106,7 @@
     font-size: 17px;
     font-weight: 340;
     border: none;
-    background: rgb(255, 255, 255);
+    background: rgba(245, 245, 245, 0.6);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -120,7 +127,7 @@ textarea::placeholder{
     font-size: 17px;
     font-weight: 340;
     border: none;
-    background: rgb(255, 255, 255);
+   background: rgba(245, 245, 245, 0.6);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

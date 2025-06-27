@@ -29,6 +29,7 @@ const HeroSection = () => {
                    }
             })
     }, [])
+    
   return (
     <div ref={heroRef} className="hero-section">
                 <div className="hero-texts">

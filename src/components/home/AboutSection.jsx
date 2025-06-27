@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import about1 from "../../assets/about1.jpg"
+import about1 from "../../assets/about2.jpg"
 import EducationStrip from "./EducationStrip"
 const AboutSection = () => {
   return (
@@ -16,7 +16,7 @@ const AboutSection = () => {
                                               </div>
                                               <div className="about-content-texts">
                                                         <p>Established in 1981 by the late President Daniel Toroitich Arap Moi, the school was born from his unwavering belief that every Kenyan child deserves access to affordable, quality education. Step through our gates and experience the difference — a culture of curiosity, values-driven teaching, and a dynamic community where every learner truly matters. </p>
-                                                        <Link to={"/"}>Find out More</Link>
+                                                        <Link to={"/about-MEC"}>Find out More</Link>
                                               </div>
                                  </div>
                       </div>     

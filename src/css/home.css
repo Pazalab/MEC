@@ -187,10 +187,10 @@
 .education-strip-moja .strip-background-video{
       opacity: 0;
 }
-
+/* 
 .education-strip-moja:hover .strip-background-image{
       opacity: 0;
-}
+} */
 .education-strip-moja:hover .strip-background-video{
      opacity: 1;
 }
@@ -212,10 +212,10 @@
      gap: 60px
 }
 .strip-texts h3{
-       font-size: 20px;
+       font-size: 16px;
        text-transform: uppercase;
        color: whitesmoke;
-       font-weight: 300;
+       font-weight: 320;
        letter-spacing: 1px;
 }
 .strip-texts h2{
@@ -253,7 +253,7 @@
        position: absolute;
        width: 100%;
        height: 100%;
-       background: linear-gradient(transparent, rgba(0, 0, 0, 0.3), rgba(0,0,0,0.7));
+       background: linear-gradient(transparent, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.7));
        z-index: 15;
 }
 
@@ -549,7 +549,7 @@
      width: 100%;
 }
 .unique-image{
-       background: url("../assets/school.jpg") no-repeat;
+       background: url("../assets/thrive.jpg") no-repeat;
        background-size: cover;
        background-position: left center;
 }
@@ -610,7 +610,7 @@
 
 .admission-section{
       padding: 100px;
-      background: url("../assets/admission.jpg") no-repeat;
+      background: url("../assets/school5.jpg") no-repeat;
       background-size: cover;
       background-position: center;
 }

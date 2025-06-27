@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
 import { TbSchool } from "react-icons/tb";
-import junior from "../../assets/junior1.jpg"
-import junior2 from "../../assets/junior2.jpg"
-import upper from "../../assets/upper.jpg"
-import middle from "../../assets/middle.jpg"
-import senior from "../../assets/senior.jpg"
+// import junior from "../../assets/pre-primary.jpg"
+// import junior2 from "../../assets/junior2.jpg"
+// import upper from "../../assets/upper.jpg"
+// import middle from "../../assets/middle.jpg"
+// import senior from "../../assets/senior.jpg"
 import { BsArrowRight } from "react-icons/bs";
 import { IoSchool } from "react-icons/io5";
+import { cbc } from "../../data/education";
 
 const EducationStrip = () => {
   return (
@@ -17,7 +18,23 @@ const EducationStrip = () => {
               </div>
               <h3 className="intro-title"><span>1</span>CBC Curriculumn</h3>
              <div className="education-strip-row">
-                        <div className="education-strip-moja">
+                       { cbc.map(item => 
+                               <div className="education-strip-moja" key={item.id}>
+                                           <div className="strip-background-image">
+                                                    <img src={item.image} alt="" />
+                                            </div>
+                                           <div className="overshadow"></div>
+                                             <div className="strip-texts">
+                                                       <div className="">
+                                                                  <h3>{item.grade}</h3>
+                                                                  <h2>{item.title}</h2>
+                                                       </div>
+
+                                                        <Link to={item.link}>Learn More <span><BsArrowRight /></span></Link>
+                                             </div>
+                               </div>
+                       )}
+                        {/* <div className="education-strip-moja">
                                    <div className="strip-background">
                                             <div className="strip-background-image">
                                                        <img src={junior} alt="" />
@@ -123,7 +140,7 @@ const EducationStrip = () => {
 
                                               <Link to={"/"}>Learn More <span><BsArrowRight /></span></Link>
                                    </div>
-                        </div>
+                        </div> */}
              </div>
 
              <div className="cambridge-section">
@@ -132,31 +149,29 @@ const EducationStrip = () => {
                        <div className="cambridge-curriculum-row">
                                  <div className="cambridge-moja">
                                              <span><IoSchool /></span>
-                                             <h3>Early Years</h3>
-                                             <p>Age 2 - 5</p>
+                                             <h3>Key Stage 1</h3>
+                                             <p>Year 1 and Year 2</p>
                                  </div>
                                  <div className="cambridge-moja">
                                              <span><IoSchool /></span>
-                                             <h3>Cambridge Primary</h3>
-                                             <p>Age 5 - 11</p>
+                                             <h3>Key Stage 2</h3>
+                                             <p>Year 3 and Year 4</p>
                                  </div>
                                  <div className="cambridge-moja">
                                              <span><IoSchool /></span>
-                                             <h3>Early Years</h3>
-                                             <p>Age 11 - 14</p>
+                                             <h3>Key Stage 3(Middle School)</h3>
+                                             <p>Year 7 to Year 9</p>
                                  </div>
                                  <div className="cambridge-moja">
                                              <span><IoSchool /></span>
-                                             <h3>Early Years</h3>
-                                             <p>Age 14 - 15</p>
-                                             <p>IGCSE & O Levels</p>
-                                             <p>Cambridge AS & A Levels</p>
+                                             <h3>Senior High School</h3>
+                                             <p>Year 10 to Year 12</p>
                                  </div>
                        </div>
              </div>
 
              <div className="strip-btn">
-                         <Link to={"/"}> Explore More <span></span></Link>
+                         <Link to={"/education/cambridge-system"}> Explore More <span></span></Link>
              </div>
     </div>
   )

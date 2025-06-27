@@ -1,5 +1,5 @@
-import school from "../../assets/school4.jpg"
-import experience from "../../assets/experience.jpg"
+import school from "../../assets/school6.jpg"
+import experience from "../../assets/experience2.jpg"
 const AboutHero = () => {
   return (
     <div className='about-hero'>

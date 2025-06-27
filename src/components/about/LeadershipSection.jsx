@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom"
 import principal from "../../assets/principal.jpg"
-import portrait1 from "../../assets/portrait1.jpg"
-import portrait2 from "../../assets/portrait2.jpg"
-import portrait3 from "../../assets/portrait3.jpg"
-import portrait4 from "../../assets/portrait4.jpg"
-import portrait5 from "../../assets/portrait5.jpg"
-import portrait6 from "../../assets/portrait6.jpg"
-import portrait7 from "../../assets/portrait7.jpg"
-import portrait8 from "../../assets/portrait8.jpg"
-import portrait9 from "../../assets/portrait9.jpg"
+// import portrait1 from "../../assets/portrait1.jpg"
+// import portrait2 from "../../assets/portrait2.jpg"
+// import portrait3 from "../../assets/portrait3.jpg"
+// import portrait4 from "../../assets/portrait4.jpg"
+// import portrait5 from "../../assets/portrait5.jpg"
+// import portrait6 from "../../assets/portrait6.jpg"
+// import portrait7 from "../../assets/portrait7.jpg"
+// import portrait8 from "../../assets/portrait8.jpg"
+// import portrait9 from "../../assets/portrait9.jpg"
 import Explorations from "../home/Explorations"
 import Accreditations from "../home/Accreditations"
+import { leaders } from "../../data/leaders"
 
 const LeadershipSection = () => {
   return (
@@ -38,12 +39,15 @@ const LeadershipSection = () => {
                                            <h2>Senior Leadership Team</h2>
 
                                            <div className="leadership-group-row">
-                                                      <div className="leader-moja">
-                                                                <img src={principal} alt="" />
-                                                                <h4>John Doe</h4>
-                                                                <p>School Director</p>
-                                                      </div>
-                                                      <div className="leader-moja">
+                                                     { leaders.map(item => 
+                                                             <div className="leader-moja" key={item.id}>
+                                                                    <img src={item.image} alt="" />
+                                                                    <h4>{item.name}</h4>
+                                                                    <p>{item.position}</p>
+                                                              </div>
+                                                     )}
+                                                      
+                                                      {/* <div className="leader-moja">
                                                                 <img src={portrait1} alt="" />
                                                                 <h4>Nancy Githinji</h4>
                                                                 <p>Operations</p>
@@ -87,7 +91,7 @@ const LeadershipSection = () => {
                                                                 <img src={portrait9} alt="" />
                                                                 <h4>Daniel Ntulale</h4>
                                                                 <p>HR</p>
-                                                      </div>
+                                                      </div> */}
                                            </div>
                                   </div>
                         </div>

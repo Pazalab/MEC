@@ -277,19 +277,152 @@
      font-weight: 350;
 }
 
+/* Leadership Styles */
+.leadership-body{
+     padding: 60px 0;
+}
+.leadership-body-intro{
+     width: 900px;
+     margin: auto;
+     text-align: center;
+}
+.leadership-body-intro h3{
+     color: var(--main-color);
+     font-weight: 440;
+     font-size: 18px;
+}
 
+.leadership-body-intro h1{
+     font-size: 60px;;
+     margin: 10px auto;
+     width: 80%;
+     font-weight: 600;
+}
 
+.leadership-body-intro p{
+     font-size: 20px;
+     line-height: 1.5;
+     font-weight: 300;
+}
 
+.leadership-content-row{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+     width: 90%;
+     margin: 40px auto;
+}
+.team-member{
+     cursor: pointer;
+}
+.team-member img{
+      display: block;
+      height: 400px;
+}
 
+.team-texts{
+     margin-top: 10px;
+}
 
+.team-texts h3{
+     font-size: 20px;
+     font-weight: 400;
+}
+.team-member:hover h3{
+     color: var(--main-color);
+}
+.team-texts p{
+     color: rgb(76, 76, 76);
+     font-size: 15px;
+     font-weight: 300;
+}
+.leadership-modal{
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: rgba(31, 1, 31, 0.515);
+     z-index: 99;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.leadership-modal-content{
+      width: 900px;
+      height: 80%;
+      background: white;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 20px;
+      position: relative;
+}
+.leadership-modal-content span.modal-close{
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 10px;
+      border-radius: 40px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      -o-border-radius: 40px;
+      cursor: pointer;
+}
+.leadership-modal-content span.modal-close:hover{
+     background: rgba(242, 230, 244, 0.511)
+}
 
-
-
-
-
-
-
-
+.leadership-modal-content .image-column{
+     padding: 20px;
+     display: flex;
+     align-items: center;
+}
+.leadership-modal-content .image-column img{
+      height: max-content;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+}
+.leadership-modal-content .description-column{
+       padding: 50px 20px;
+}
+.leadership-modal-content .description-column .description-column-texts{
+     height: 475px;
+     overflow-y: scroll;
+}
+.description-column-texts h3{
+     font-size: 30px;
+     font-weight: 450;
+     margin-bottom: 5px;
+}
+.description-column-texts h4{
+     font-weight: 420;
+     margin-bottom: 20px;
+     color: rgb(60, 60, 60);
+}
+.description-column-texts p{
+     font-weight: 300;
+     margin-bottom: 10px;
+     line-height: 1.5;
+     color: rgb(40, 40, 40);
+}
+.description-column-texts p span{
+     color: var(--main-color);
+     font-style: italic;
+}
 
 
 
@@ -307,7 +440,9 @@
       .statements-,
       .values-body,
       .statements-grid,
-      .principal-intro{
+      .principal-intro,
+      .leadership-body-intro,
+      .leadership-content-row{
            width: 100%;
       }
 
@@ -315,6 +450,13 @@
            grid-template-columns: repeat(4, 1fr);
       }
 
+      .leadership-content-row{
+            grid-template-columns: 1fr 1fr;
+      }
+
+      .leadership-modal-content{
+            width: 95%;
+      }
 }
 
 @media(max-width: 900px){
@@ -328,8 +470,10 @@
       .focus-point h2,
       .history-texts h2,
       .value-system-texts h2,
-      .leadership-intro h2{
+      .leadership-intro h2,
+      .leadership-body-intro h1{
             font-size: 45px;
+            width: 100%;
       }
       .focus-point p,
       .value-system-texts p{
@@ -358,12 +502,24 @@
       .value-moja h3{
            font-size: 28px;
       }
-      .value-moja p{
+      .value-moja p,
+      .leadership-body-intro p{
          font-size: 18px;
       }
      .leadership-group-row{
             grid-template-columns: repeat(2, 1fr);
       }
+      .leadership-modal-content{
+            grid-template-columns: 1fr;
+      }
+      .leadership-modal-content .image-column{
+          display: none;
+      }
+}
+@media(max-width: 600px){
+     .leadership-content-row{
+          grid-template-columns: 1fr;
+     }
 }
 
 @media(max-width: 550px){

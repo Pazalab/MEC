@@ -1,4 +1,4 @@
-import school from "../../assets/school2.jpg"
+import school from "../../assets/school7.jpg"
 import { values } from "../../data/values"
 
 const StatementsSection = () => {

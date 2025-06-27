@@ -9,7 +9,7 @@ const CommunitySection = () => {
                                    <p>Moi Educational Centre is deeply committed to outreach and community engagement, working in partnership with local schools, charitable organisations, and social initiatives. We believe in the power of service learning to broaden perspectives and instill a sense of purpose beyond academic success.</p>
                                    <p>Our outreach programme includes a wide range of activities — from environmental clean-up projects and mentorship programmes to visits to children’s homes and community health awareness drives. These experiences serve as a meaningful extension of the classroom, nurturing empathy, leadership, and a strong sense of social responsibility in our learners.</p>
 
-                                   <Link to={"/"}>Find out More</Link>
+                                   {/* <Link to={"/"}>Find out More</Link> */}
                         </div>
             </div>
             <div className="community-image"></div>

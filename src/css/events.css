@@ -1,0 +1,9 @@
+.events-hero{
+      padding: 60px 0;
+}
+
+.events-hero-content{
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 50px;
+}

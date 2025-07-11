@@ -1,8 +1,7 @@
-import blog1 from "../../assets/kids.jpg"
-import blog2 from "../../assets/innovation.jpg"
-import blog3 from "../../assets/academic.jpg"
+
 import { HiChevronRight } from "react-icons/hi2";
 import { Link } from "react-router-dom"
+import { articles } from "../../data/articles";
 
 const NewsHero = () => {
   return (
@@ -24,42 +23,17 @@ const NewsHero = () => {
                                                                      </select>
                                                            </div>
                                                           <div className="news-body-group">
-                                                                         <div className="blog-moja">
-                                                                                    <img src={blog1} alt="" />
+                                                                  { articles.map(item => 
+                                                                        <div className="blog-moja" key={item.id}>
+                                                                                <img src={item.image} alt="" />
 
-                                                                                  <div className="blog-texts">
-                                                                                            <h3>Event</h3>
-                                                                                            <h2>Celebrating Excellence: Highlights from MEC’s Annual Talent & Culture Showcase</h2>
-                                                                                            <Link to={"/"}>Read More <span><HiChevronRight /></span></Link>
-                                                                                  </div>
-                                                                       </div>
-                                                                       <div className="blog-moja">
-                                                                                  <img src={blog2} alt="" />
-
-                                                                                  <div className="blog-texts">
-                                                                                            <h3>News</h3>
-                                                                                            <h2>Moi Educational Centre Launches New Innovation Lab to Empower Future-Ready Learners</h2>
-                                                                                            <Link to={"/"}>Read More <span><HiChevronRight /></span></Link>
-                                                                                  </div>
-                                                                       </div>
-                                                                        <div className="blog-moja">
-                                                                                   <img src={blog3} alt="" />
-
-                                                                                   <div className="blog-texts">
-                                                                                             <h3>Academic</h3>
-                                                                                             <h2>Beyond the Books: How MEC’s Holistic Approach is Redefining Academic Success</h2>
-                                                                                             <Link to={"/"}>Read More <span><HiChevronRight /></span></Link>
-                                                                                   </div>
+                                                                                <div className="blog-texts">
+                                                                                          <h3>{item.category}</h3>
+                                                                                          <h2>{item.title}</h2>
+                                                                                          <Link to={item.link}>Read More <span><HiChevronRight /></span></Link>
+                                                                                </div>
                                                                         </div>
-                                                                         <div className="blog-moja">
-                                                                                    <img src={blog1} alt="" />
-
-                                                                                  <div className="blog-texts">
-                                                                                            <h3>Event</h3>
-                                                                                            <h2>Celebrating Excellence: Highlights from MEC’s Annual Talent & Culture Showcase</h2>
-                                                                                            <Link to={"/"}>Read More <span><HiChevronRight /></span></Link>
-                                                                                  </div>
-                                                                       </div>
+                                                                  )}
                                                           </div>
                                              </div>
                                   </div>

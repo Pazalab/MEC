@@ -647,6 +647,7 @@
        height: 55px;
        display: flex;
        align-items: center;
+       cursor: pointer;
        justify-content: center;
        gap: 5px;
        background: var(--main-color);

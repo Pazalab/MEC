@@ -37,6 +37,7 @@ const Header = () => {
   const [ sidebarStatus, setSidebarStatus ] = useContext(sidebarContext);
 
   const { pathname } = useLocation();
+ // console.log(pathname.slice(1,11))
   return (
     <header>
              <div className="inner-row">
@@ -57,7 +58,7 @@ const Header = () => {
                                                        <li onMouseEnter={() => setEducationDrop(true)} onMouseLeave={() => setEducationDrop(false)}><Link to={"#"} className={ pathname.slice(1, 10) === "education" ? "active" : ""}>Education</Link>
                                                                  <Dropdown data={educationData} status={educationDrop} />
                                                        </li>
-                                                       <li onMouseEnter={() => setAdmissionDrop(true)} onMouseLeave={() => setAdmissionDrop(false)}><Link to={"#"}>Admissions</Link>
+                                                       <li onMouseEnter={() => setAdmissionDrop(true)} onMouseLeave={() => setAdmissionDrop(false)}><Link to={"#"} className={ pathname.slice(1, 11) === "admissions" ? "active": ""}>Admissions</Link>
                                                                 <Dropdown data={admissionData} status={admissionDrop} />
                                                        </li>
                                                        <li><NavLink to={"/news-and-updates"}>News & Updates</NavLink></li>

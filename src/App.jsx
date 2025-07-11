@@ -11,6 +11,8 @@ import CambridgePage from './pages/CambridgePage'
 import { useEffect } from 'react'
 import WordFromChairman from './pages/WordFromChairman'
 import Events from './pages/Events'
+import SingleEventPage from './pages/SingleEventPage'
+import SingleArticlePage from './pages/SingleArticlePage'
 
 function App() {
   const location = useLocation();
@@ -30,6 +32,8 @@ function App() {
               <Route path='/about-MEC/word-from-our-chairman' element={<WordFromChairman />} />
               <Route path='/education/cambridge-system' element={<CambridgePage />} />
               <Route path="/about-MEC/school-events" element={<Events />} />
+              <Route path="/about-MEC/school-events/:name" element={<SingleEventPage />} />
+              <Route path='/news-and-updates/:title' element={<SingleArticlePage />} />
     </Routes>
   )
 }

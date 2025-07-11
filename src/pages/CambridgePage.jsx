@@ -25,10 +25,10 @@ const CambridgePage = () => {
 
                                      <h2>Cambridge Key Stages at Moi Educational Centre</h2>
 
-                                     <h3>Key Stage 1: Year 1 and Year 2</h3>
+                                     <h3>Key Stage 1: Year 1 to Year 2</h3>
                                      <p>This marks the beginning of formal education, with a strong focus on curiosity, social development, and foundational skills in literacy and numeracy. Learners explore their environment through nature-based learning, storytelling, and play, developing early reasoning, conflict resolution, and interpersonal skills.</p>
                                      <p>At Moi Educational Centre, we currently offer Year 1 and Year 2 in well-equipped, child-friendly spaces that support holistic development.</p>
-                                     <h3>Key Stage 2: Year 3 and Year 4</h3>
+                                     <h3>Key Stage 2: Year 3 to Year 6</h3>
                                      <p>At this stage, learners begin to understand themselves as students. They are introduced to basic research skills, guided discovery, and problem-solving through creative thinking. Confidence and independence are nurtured through personal projects and early public speaking opportunities. By the end of this phase, learners demostrate greater responsibility and a clear academic identity.</p>
                                      <h3>Key Stage 3 (Middle School): Year 7 to Year 9</h3>
                                      <p>Learners explore a broader curriculum and begin identifying their academic interests and personal strengths. With the support of guidance and counselling, they receive help in clarifying goals and values. Emphasis is placed on teamwork, critical thinking, and effective communication, preparing them for subject specialization and long-term planning.</p>

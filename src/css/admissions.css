@@ -18,10 +18,85 @@
       color: rgb(50, 50, 50);
       margin: 10px 0;
 }
+.process-body-content{
+       width: 1000px;
+       margin: 40px auto 0px auto;
+}
+.process-moja{
+       padding: 30px;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       margin-bottom: 20px;
+       display: flex;
+       gap: 20px;
+       background: rgba(227, 223, 227, 0.3);
+       transition: all 0.5s ease;
+       -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+       -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+}
+.process-moja:hover{
+       background: var(--main-color);
+}
+.process-moja span{
+       font-size: 20px;
+       font-weight: 600;
+       width: 50px;
+       height: 50px;
+       background: var(--main-color);
+       flex-shrink: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 50px;
+       -webkit-border-radius: 50px;
+       -moz-border-radius: 50px;
+       -ms-border-radius: 50px;
+       -o-border-radius: 50px;
+       color: white;
+}
+.process-moja:hover span{
+       background: white;
+       color: var(--main-color);
+}
+.process-moja:hover .process-moja-texts{
+       color: white;
+}
+.process-moja-texts h3{
+       font-size: 25px;
+       font-weight: 520;
+       margin-bottom: 5px;
+}
+.process-moja-texts p{
+       font-size: 18px;
+       font-weight: 300;
+       line-height: 1.5;
+}
+
+.pitch{
+       width: 1000px;
+       margin: 10px auto;
+       font-size: 20px;
+       text-align: center;
+       font-weight: 300;
+}
+
+
+
+
+
+
+
 
 
 @media(max-width: 1090px){
-       .process-body-intro{
+       .process-body-intro,
+       .process-body-content,
+       .pitch{
               width: 100%;
        }
 }
